@@ -12,6 +12,12 @@ await downloadBuildArtifacts("main", "experimental");
 console.log("Downloaded build artifacts!");
 
 console.log("Committing build artifacts...");
+
+await execAsync(
+  'git config --global user.email "matthewjameshamlin@gmail.com"',
+);
+await execAsync("git config --global user.name 'Matt Hamlin'");
+
 await execAsync("git add .", { cwd: "./" });
 await execAsync("git commit -m 'chore: download build artifacts'", {
   cwd: "./",
