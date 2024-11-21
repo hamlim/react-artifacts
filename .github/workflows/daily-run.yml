@@ -1,0 +1,25 @@
+name: Daily Script Run
+
+on:
+  schedule:
+    # Runs at 10am EST (15:00 UTC) Monday-Friday
+    - cron: '0 15 * * 1-5'
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Run script
+        run: bun run index.mjs

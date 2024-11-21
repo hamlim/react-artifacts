@@ -1,0 +1,8 @@
+{
+	"name": "react-artifacts",
+	"module": "index.mjs",
+	"type": "module",
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4"
+	}
+}
