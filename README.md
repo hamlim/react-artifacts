@@ -1,15 +1,4 @@
 # react-artifacts
 
-To install dependencies:
+This is meant to be a daily job to pull down React build artifacts (mainly for experimental builds, but also others) and then commit them to the repo (as a cheap S3-like store)!
 
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.1.34. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
