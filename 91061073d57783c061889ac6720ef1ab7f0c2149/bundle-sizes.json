@@ -1,0 +1,81 @@
+{
+  "bundleSizes": [
+    {
+      "filename": "react-compiler-runtime.profiling.js",
+      "bundleType": "NODE_PROFILING",
+      "packageName": "react",
+      "size": 462,
+      "gzip": 333
+    },
+    {
+      "filename": "ReactDOM-dev.js",
+      "bundleType": "FB_WWW_DEV",
+      "packageName": "react-dom",
+      "size": 1064366,
+      "gzip": 177761
+    },
+    {
+      "filename": "react-dom-unstable_testing.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-dom",
+      "size": 529557,
+      "gzip": 95565
+    },
+    {
+      "filename": "react-markup.react-server.development.js",
+      "bundleType": "NODE_DEV",
+      "packageName": "react-markup",
+      "size": 513769,
+      "gzip": 91880
+    },
+    {
+      "filename": "react-server-dom-webpack-plugin.js",
+      "bundleType": "NODE_ES2015",
+      "packageName": "react-server-dom-webpack",
+      "size": 14301,
+      "gzip": 3842
+    },
+    {
+      "filename": "react-server-dom-esm-client.browser.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-server-dom-esm",
+      "size": 50704,
+      "gzip": 10337
+    },
+    {
+      "filename": "ReactTestRenderer-profiling.js",
+      "bundleType": "RN_FB_PROFILING",
+      "packageName": "react-test-renderer",
+      "size": 352938,
+      "gzip": 61123
+    },
+    {
+      "filename": "react-client-flight.development.js",
+      "bundleType": "NODE_DEV",
+      "packageName": "react-client",
+      "size": 97109,
+      "gzip": 17902
+    },
+    {
+      "filename": "ReactCacheOld-prod.js",
+      "bundleType": "FB_WWW_PROD",
+      "packageName": "react-cache",
+      "size": 5163,
+      "gzip": 1596
+    },
+    {
+      "filename": "Scheduler-profiling.js",
+      "bundleType": "RN_FB_PROFILING",
+      "packageName": "scheduler",
+      "size": 10774,
+      "gzip": 2637
+    },
+    {
+      "filename": "react-refresh-runtime.development.js",
+      "bundleType": "NODE_DEV",
+      "packageName": "react-refresh",
+      "size": 12357,
+      "gzip": 2982
+    }
+  ]
+}
