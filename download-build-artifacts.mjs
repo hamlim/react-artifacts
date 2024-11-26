@@ -89,7 +89,7 @@ async function processArtifact(artifact, releaseChannel, commit) {
   if (existsSync(join(cwd, commit))) {
     // if we've already processed this commit, skip
     console.log(`{info Already processed commit: ${commit}}`);
-    return;
+    process.exit(0);
   }
 
   await exec(`mv ./build ./${commit}`, { cwd });
