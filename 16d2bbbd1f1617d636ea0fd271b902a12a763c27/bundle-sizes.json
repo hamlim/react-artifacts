@@ -1,0 +1,84 @@
+{
+  "bundleSizes": [
+    {
+      "filename": "React-prod.js",
+      "bundleType": "RN_FB_PROD",
+      "packageName": "react",
+      "size": 19283,
+      "gzip": 4993
+    },
+    {
+      "filename": "JSXDEVRuntime-profiling.js",
+      "bundleType": "FB_WWW_PROFILING",
+      "packageName": "react",
+      "size": 431,
+      "gzip": 302
+    },
+    {
+      "filename": "ReactDOMClient-profiling.js",
+      "bundleType": "RN_FB_PROFILING",
+      "packageName": "react-dom",
+      "size": 561176,
+      "gzip": 99316
+    },
+    {
+      "filename": "react-dom-server.browser.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-dom",
+      "size": 220763,
+      "gzip": 39873
+    },
+    {
+      "filename": "react-server-dom-webpack-client.node.unbundled.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-server-dom-webpack",
+      "size": 58958,
+      "gzip": 11850
+    },
+    {
+      "filename": "react-server-dom-esm-client.browser.development.js",
+      "bundleType": "ESM_DEV",
+      "packageName": "react-server-dom-esm",
+      "size": 123380,
+      "gzip": 28520
+    },
+    {
+      "filename": "ReactFabric-profiling.js",
+      "bundleType": "RN_FB_PROFILING",
+      "packageName": "react-native-renderer",
+      "size": 406131,
+      "gzip": 70258
+    },
+    {
+      "filename": "react-reconciler.development.js",
+      "bundleType": "NODE_DEV",
+      "packageName": "react-reconciler",
+      "size": 638726,
+      "gzip": 102414
+    },
+    {
+      "filename": "ReactIs-prod.js",
+      "bundleType": "FB_WWW_PROD",
+      "packageName": "react-is",
+      "size": 5944,
+      "gzip": 1385
+    },
+    {
+      "filename": "use-sync-external-store-shim/with-selector.development.js",
+      "bundleType": "NODE_DEV",
+      "packageName": "use-sync-external-store",
+      "size": 3526,
+      "gzip": 1032
+    },
+    {
+      "filename": "SchedulerPostTask-dev.js",
+      "bundleType": "FB_WWW_DEV",
+      "packageName": "scheduler",
+      "size": 4810,
+      "gzip": 1208
+    }
+  ]
+} 2933
+    }
+  ]
+}
