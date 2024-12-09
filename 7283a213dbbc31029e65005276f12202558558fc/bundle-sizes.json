@@ -1,0 +1,81 @@
+{
+  "bundleSizes": [
+    {
+      "filename": "React-profiling.js",
+      "bundleType": "FB_WWW_PROFILING",
+      "packageName": "react",
+      "size": 21289,
+      "gzip": 5396
+    },
+    {
+      "filename": "JSXDEVRuntime-dev.js",
+      "bundleType": "FB_WWW_DEV",
+      "packageName": "react",
+      "size": 26642,
+      "gzip": 6378
+    },
+    {
+      "filename": "ReactDOMClient-dev.js",
+      "bundleType": "RN_FB_DEV",
+      "packageName": "react-dom",
+      "size": 985198,
+      "gzip": 165953
+    },
+    {
+      "filename": "ReactDOMServer-prod.js",
+      "bundleType": "FB_WWW_PROD",
+      "packageName": "react-dom",
+      "size": 209388,
+      "gzip": 38209
+    },
+    {
+      "filename": "react-server-dom-webpack-server.node.development.js",
+      "bundleType": "NODE_DEV",
+      "packageName": "react-server-dom-webpack",
+      "size": 159062,
+      "gzip": 28994
+    },
+    {
+      "filename": "react-server-dom-turbopack-server.node.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-server-dom-turbopack",
+      "size": 102966,
+      "gzip": 20724
+    },
+    {
+      "filename": "react-art.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-art",
+      "size": 304035,
+      "gzip": 52179
+    },
+    {
+      "filename": "react-noop-renderer-server.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-noop-renderer",
+      "size": 5747,
+      "gzip": 1468
+    },
+    {
+      "filename": "ReactReconcilerConstants-dev.js",
+      "bundleType": "FB_WWW_DEV",
+      "packageName": "react-reconciler",
+      "size": 602,
+      "gzip": 343
+    },
+    {
+      "filename": "use-sync-external-store-shim.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "use-sync-external-store",
+      "size": 1967,
+      "gzip": 734
+    },
+    {
+      "filename": "SchedulerMock-prod.js",
+      "bundleType": "RN_FB_PROD",
+      "packageName": "scheduler",
+      "size": 12281,
+      "gzip": 2863
+    }
+  ]
+}
