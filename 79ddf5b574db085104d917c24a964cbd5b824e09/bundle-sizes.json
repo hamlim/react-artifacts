@@ -1,0 +1,74 @@
+{
+  "bundleSizes": [
+    {
+      "filename": "react-compiler-runtime.profiling.js",
+      "bundleType": "NODE_PROFILING",
+      "packageName": "react",
+      "size": 462,
+      "gzip": 333
+    },
+    {
+      "filename": "ReactDOM-dev.js",
+      "bundleType": "FB_WWW_DEV",
+      "packageName": "react-dom",
+      "size": 1074787,
+      "gzip": 179732
+    },
+    {
+      "filename": "ReactDOMTesting-prod.js",
+      "bundleType": "FB_WWW_PROD",
+      "packageName": "react-dom",
+      "size": 610288,
+      "gzip": 108787
+    },
+    {
+      "filename": "react-server-dom-webpack-server.node.unbundled.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-server-dom-webpack",
+      "size": 95380,
+      "gzip": 19605
+    },
+    {
+      "filename": "react-server-dom-turbopack-client.browser.development.js",
+      "bundleType": "NODE_DEV",
+      "packageName": "react-server-dom-turbopack",
+      "size": 90167,
+      "gzip": 17156
+    },
+    {
+      "filename": "ReactNativeRenderer-dev.js",
+      "bundleType": "RN_FB_DEV",
+      "packageName": "react-native-renderer",
+      "size": 674478,
+      "gzip": 110133
+    },
+    {
+      "filename": "react-noop-renderer-persistent.development.js",
+      "bundleType": "NODE_DEV",
+      "packageName": "react-noop-renderer",
+      "size": 39962,
+      "gzip": 7344
+    },
+    {
+      "filename": "react-reconciler-reflection.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-reconciler",
+      "size": 5693,
+      "gzip": 1531
+    },
+    {
+      "filename": "use-sync-external-store.development.js",
+      "bundleType": "NODE_DEV",
+      "packageName": "use-sync-external-store",
+      "size": 1374,
+      "gzip": 616
+    },
+    {
+      "filename": "SchedulerMock-dev.js",
+      "bundleType": "FB_WWW_DEV",
+      "packageName": "scheduler",
+      "size": 17585,
+      "gzip": 3685
+    }
+  ]
+}
