@@ -1,0 +1,88 @@
+{
+  "bundleSizes": [
+    {
+      "filename": "React-prod.js",
+      "bundleType": "RN_FB_PROD",
+      "packageName": "react",
+      "size": 19319,
+      "gzip": 5008
+    },
+    {
+      "filename": "JSXDEVRuntime-profiling.js",
+      "bundleType": "FB_WWW_PROFILING",
+      "packageName": "react",
+      "size": 431,
+      "gzip": 302
+    },
+    {
+      "filename": "ReactDOMClient-profiling.js",
+      "bundleType": "RN_FB_PROFILING",
+      "packageName": "react-dom",
+      "size": 561422,
+      "gzip": 99333
+    },
+    {
+      "filename": "react-dom-server.browser.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-dom",
+      "size": 220763,
+      "gzip": 39873
+    },
+    {
+      "filename": "react-server-dom-webpack-client.node.unbundled.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-server-dom-webpack",
+      "size": 58971,
+      "gzip": 11853
+    },
+    {
+      "filename": "react-server-dom-parcel-server.node.development.js",
+      "bundleType": "NODE_DEV",
+      "packageName": "react-server-dom-parcel",
+      "size": 132713,
+      "gzip": 24889
+    },
+    {
+      "filename": "react-art.development.js",
+      "bundleType": "NODE_DEV",
+      "packageName": "react-art",
+      "size": 555463,
+      "gzip": 89789
+    },
+    {
+      "filename": "ReactTestRenderer-prod.js",
+      "bundleType": "RN_FB_PROD",
+      "packageName": "react-test-renderer",
+      "size": 330909,
+      "gzip": 57996
+    },
+    {
+      "filename": "react-server-flight.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-server",
+      "size": 57634,
+      "gzip": 11597
+    },
+    {
+      "filename": "ReactCacheOld-dev.js",
+      "bundleType": "FB_WWW_DEV",
+      "packageName": "react-cache",
+      "size": 6996,
+      "gzip": 2020
+    },
+    {
+      "filename": "Scheduler-prod.js",
+      "bundleType": "RN_FB_PROD",
+      "packageName": "scheduler",
+      "size": 10340,
+      "gzip": 2537
+    },
+    {
+      "filename": "react-refresh-babel.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-refresh",
+      "size": 20627,
+      "gzip": 4077
+    }
+  ]
+}
