@@ -1,0 +1,88 @@
+{
+  "bundleSizes": [
+    {
+      "filename": "react.development.js",
+      "bundleType": "NODE_DEV",
+      "packageName": "react",
+      "size": 56065,
+      "gzip": 12494
+    },
+    {
+      "filename": "react-jsx-runtime.react-server.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react",
+      "size": 1312,
+      "gzip": 681
+    },
+    {
+      "filename": "ReactDOM-profiling.js",
+      "bundleType": "FB_WWW_PROFILING",
+      "packageName": "react-dom",
+      "size": 619572,
+      "gzip": 108313
+    },
+    {
+      "filename": "react-dom-server-legacy.browser.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-dom",
+      "size": 201582,
+      "gzip": 37046
+    },
+    {
+      "filename": "react-server-dom-webpack-server.edge.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-server-dom-webpack",
+      "size": 93431,
+      "gzip": 19196
+    },
+    {
+      "filename": "react-server-dom-turbopack-client.node.development.js",
+      "bundleType": "NODE_DEV",
+      "packageName": "react-server-dom-turbopack",
+      "size": 94286,
+      "gzip": 17802
+    },
+    {
+      "filename": "react-server-dom-esm-client.browser.development.js",
+      "bundleType": "NODE_DEV",
+      "packageName": "react-server-dom-esm",
+      "size": 87990,
+      "gzip": 16772
+    },
+    {
+      "filename": "ReactFabric-prod.js",
+      "bundleType": "RN_OSS_PROD",
+      "packageName": "react-native-renderer",
+      "size": 355238,
+      "gzip": 62057
+    },
+    {
+      "filename": "react-reconciler.profiling.js",
+      "bundleType": "NODE_PROFILING",
+      "packageName": "react-reconciler",
+      "size": 412846,
+      "gzip": 66654
+    },
+    {
+      "filename": "ReactIs-prod.js",
+      "bundleType": "RN_FB_PROD",
+      "packageName": "react-is",
+      "size": 4466,
+      "gzip": 1070
+    },
+    {
+      "filename": "scheduler.development.js",
+      "bundleType": "NODE_DEV",
+      "packageName": "scheduler",
+      "size": 12427,
+      "gzip": 2739
+    },
+    {
+      "filename": "SchedulerPostTask-profiling.js",
+      "bundleType": "FB_WWW_PROFILING",
+      "packageName": "scheduler",
+      "size": 4156,
+      "gzip": 1163
+    }
+  ]
+}
