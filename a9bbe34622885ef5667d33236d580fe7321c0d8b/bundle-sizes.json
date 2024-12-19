@@ -1,0 +1,81 @@
+{
+  "bundleSizes": [
+    {
+      "filename": "react-compiler-runtime.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react",
+      "size": 463,
+      "gzip": 332
+    },
+    {
+      "filename": "react-dom-profiling.profiling.js",
+      "bundleType": "NODE_PROFILING",
+      "packageName": "react-dom",
+      "size": 541971,
+      "gzip": 96160
+    },
+    {
+      "filename": "ReactDOMTesting-dev.js",
+      "bundleType": "FB_WWW_DEV",
+      "packageName": "react-dom",
+      "size": 1084372,
+      "gzip": 182255
+    },
+    {
+      "filename": "react-server-dom-webpack-server.node.unbundled.development.js",
+      "bundleType": "NODE_DEV",
+      "packageName": "react-server-dom-webpack",
+      "size": 141854,
+      "gzip": 26367
+    },
+    {
+      "filename": "react-server-dom-turbopack-server.edge.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-server-dom-turbopack",
+      "size": 93568,
+      "gzip": 19224
+    },
+    {
+      "filename": "react-server-dom-esm-server.node.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-server-dom-esm",
+      "size": 89758,
+      "gzip": 18737
+    },
+    {
+      "filename": "ReactFabric-prod.js",
+      "bundleType": "RN_FB_PROD",
+      "packageName": "react-native-renderer",
+      "size": 380556,
+      "gzip": 66349
+    },
+    {
+      "filename": "react-noop-renderer-flight-client.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-noop-renderer",
+      "size": 1781,
+      "gzip": 727
+    },
+    {
+      "filename": "ReactIs-dev.js",
+      "bundleType": "FB_WWW_DEV",
+      "packageName": "react-is",
+      "size": 6336,
+      "gzip": 1374
+    },
+    {
+      "filename": "use-sync-external-store-with-selector.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "use-sync-external-store",
+      "size": 2631,
+      "gzip": 863
+    },
+    {
+      "filename": "scheduler-unstable_post_task.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "scheduler",
+      "size": 3974,
+      "gzip": 1117
+    }
+  ]
+}
