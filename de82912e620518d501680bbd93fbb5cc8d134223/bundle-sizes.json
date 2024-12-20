@@ -1,0 +1,88 @@
+{
+  "bundleSizes": [
+    {
+      "filename": "React-prod.js",
+      "bundleType": "FB_WWW_PROD",
+      "packageName": "react",
+      "size": 20602,
+      "gzip": 5268
+    },
+    {
+      "filename": "react-jsx-dev-runtime.profiling.js",
+      "bundleType": "NODE_PROFILING",
+      "packageName": "react",
+      "size": 386,
+      "gzip": 277
+    },
+    {
+      "filename": "ReactDOM-profiling.js",
+      "bundleType": "RN_FB_PROFILING",
+      "packageName": "react-dom",
+      "size": 6473,
+      "gzip": 1801
+    },
+    {
+      "filename": "react-dom-server-legacy.node.development.js",
+      "bundleType": "NODE_DEV",
+      "packageName": "react-dom",
+      "size": 346027,
+      "gzip": 63285
+    },
+    {
+      "filename": "react-server-dom-webpack-client.node.development.js",
+      "bundleType": "NODE_DEV",
+      "packageName": "react-server-dom-webpack",
+      "size": 98612,
+      "gzip": 18377
+    },
+    {
+      "filename": "react-server-dom-turbopack-client.edge.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-server-dom-turbopack",
+      "size": 58172,
+      "gzip": 11919
+    },
+    {
+      "filename": "react-server-dom-esm-client.node.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-server-dom-esm",
+      "size": 54347,
+      "gzip": 11152
+    },
+    {
+      "filename": "react-test-renderer.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-test-renderer",
+      "size": 311165,
+      "gzip": 54566
+    },
+    {
+      "filename": "react-server.development.js",
+      "bundleType": "NODE_DEV",
+      "packageName": "react-server",
+      "size": 156429,
+      "gzip": 28423
+    },
+    {
+      "filename": "react-debug-tools.production.js",
+      "bundleType": "NODE_PROD",
+      "packageName": "react-debug-tools",
+      "size": 27788,
+      "gzip": 5535
+    },
+    {
+      "filename": "Scheduler-prod.js",
+      "bundleType": "FB_WWW_PROD",
+      "packageName": "scheduler",
+      "size": 10357,
+      "gzip": 2573
+    },
+    {
+      "filename": "eslint-plugin-react-hooks.development.js",
+      "bundleType": "NODE_DEV",
+      "packageName": "eslint-plugin-react-hooks",
+      "size": 87746,
+      "gzip": 14714
+    }
+  ]
+}
