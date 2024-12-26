@@ -6,8 +6,14 @@ const execAsync = promisify(exec);
 
 console.log("Starting Script...");
 
-console.log("Downloading build artifacts...");
-await downloadBuildArtifacts("main", "experimental");
+let commitRes = await execAsync(
+  `git ls-remote https://github.com/${OWNER}/${REPO}.git refs/heads/main`,
+);
+let commit = commitRes.stdout.split("\t")[0];
+let label = `commit ${commit}`;
+console.log(`Downloading artifacts from GitHub for ${label}...`);
+
+await downloadBuildArtifacts(commit, "experimental");
 
 console.log("Downloaded build artifacts!");
 

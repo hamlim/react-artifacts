@@ -118,14 +118,9 @@ async function processArtifact(artifact, releaseChannel, commit) {
   });
 }
 
-async function downloadArtifactsFromGitHub(_commit, releaseChannel) {
+async function downloadArtifactsFromGitHub(commit, releaseChannel) {
   let workflowRun;
   let retries = 0;
-
-  let commitRes = await exec(
-    `git ls-remote https://github.com/${OWNER}/${REPO}.git refs/heads/main`,
-  );
-  let commit = commitRes.stdout.split("\t")[0];
 
   // wait up to 10 mins for build to finish: 10 * 60 * 1_000) / 30_000 = 20
   while (retries < 20) {
@@ -179,8 +174,6 @@ ${workflowRun != null ? JSON.stringify(workflowRun, null, "\t") : workflowRun}`,
 }
 
 async function downloadBuildArtifacts(commit, releaseChannel) {
-  let label = `commit ${commit}`;
-  console.log(`Downloading artifacts from GitHub for ${label}...`);
   return downloadArtifactsFromGitHub(commit, releaseChannel);
 }
 
