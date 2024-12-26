@@ -10,8 +10,8 @@ if (process.env.GH_TOKEN == null) {
   process.exit(1);
 }
 
-let OWNER = "facebook";
-let REPO = "react";
+export let OWNER = "facebook";
+export let REPO = "react";
 let WORKFLOW_ID = "runtime_build_and_test.yml";
 let GITHUB_HEADERS = `
   -H "Accept: application/vnd.github+json" \

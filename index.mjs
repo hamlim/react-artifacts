@@ -1,6 +1,10 @@
 import { exec } from "node:child_process";
 import { promisify } from "node:util";
-import { downloadBuildArtifacts } from "./download-build-artifacts.mjs";
+import {
+  OWNER,
+  REPO,
+  downloadBuildArtifacts,
+} from "./download-build-artifacts.mjs";
 
 const execAsync = promisify(exec);
 
