@@ -51,7 +51,7 @@ let publishPackages = ["react-server-dom-esm"];
 let scope = "@matthamlin";
 
 for (let packageName of publishPackages) {
-  let packagePath = path.join("./", commit, packageName);
+  let packagePath = path.join("./", commit, "oss-experimental", packageName);
   let packageJsonPath = path.join(packagePath, "package.json");
   let packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf8"));
   packageJson.name = `${scope}/${packageName}`;
