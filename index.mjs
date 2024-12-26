@@ -56,9 +56,9 @@ for (let packageName of publishPackages) {
   let packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf8"));
   packageJson.name = `${scope}/${packageName}`;
   fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
-}
-
-for (let packageName of publishPackages) {
-  let packagePath = path.join("./", commit, packageName);
   await execAsync(`npm publish --access public`, { cwd: packagePath });
 }
+
+// for (let packageName of publishPackages) {
+//   let packagePath = path.join("./", commit, packageName);
+// }
