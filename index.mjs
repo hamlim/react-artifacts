@@ -23,13 +23,40 @@ console.log("Downloaded build artifacts!");
 
 console.log("Committing build artifacts...");
 
-await execAsync(
-  'git config --global user.email "matthewjameshamlin@gmail.com"',
-);
-await execAsync("git config --global user.name 'Matt Hamlin'");
+try {
+  await execAsync(
+    'git config --global user.email "matthewjameshamlin@gmail.com"',
+  );
+  await execAsync("git config --global user.name 'Matt Hamlin'");
 
-await execAsync("git add .", { cwd: "./" });
-await execAsync("git commit -m 'chore: download build artifacts'", {
-  cwd: "./",
-});
-await execAsync("git push -u origin main");
+  await execAsync("git add .", { cwd: "./" });
+  await execAsync("git commit -m 'chore: download build artifacts'", {
+    cwd: "./",
+  });
+  await execAsync("git push -u origin main");
+} catch (e) {
+  console.error("Failed to create and push commit", e);
+}
+
+console.log("Publishing artifacts to NPM!");
+
+// find the allowlisted packages from `publishPackages` within `./${commit}`
+// update their `name` field to be `@matthamlin/${existingPackageName}`
+// and then run `npm publish` for each of them
+
+let publishPackages = ["react-server-dom-esm"];
+
+let scope = "@matthamlin";
+
+for (let packageName of publishPackages) {
+  let packagePath = path.join("./", commit, packageName);
+  let packageJsonPath = path.join(packagePath, "package.json");
+  let packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf8"));
+  packageJson.name = `${scope}/${packageName}`;
+  fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
+}
+
+for (let packageName of publishPackages) {
+  let packagePath = path.join("./", commit, packageName);
+  await execAsync(`npm publish --access public`, { cwd: packagePath });
+}
