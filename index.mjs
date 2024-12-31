@@ -10,6 +10,8 @@ import {
 
 const execAsync = promisify(exec);
 
+let commitArtifacts = false;
+
 console.log("Starting Script...");
 
 let commitRes = await execAsync(
@@ -23,21 +25,23 @@ await downloadBuildArtifacts(commit, "experimental");
 
 console.log("Downloaded build artifacts!");
 
-console.log("Committing build artifacts...");
+if (commitArtifacts) {
+  console.log("Committing build artifacts...");
 
-try {
-  await execAsync(
-    'git config --global user.email "matthewjameshamlin@gmail.com"',
-  );
-  await execAsync("git config --global user.name 'Matt Hamlin'");
+  try {
+    await execAsync(
+      'git config --global user.email "matthewjameshamlin@gmail.com"',
+    );
+    await execAsync("git config --global user.name 'Matt Hamlin'");
 
-  await execAsync("git add .", { cwd: "./" });
-  await execAsync("git commit -m 'chore: download build artifacts'", {
-    cwd: "./",
-  });
-  await execAsync("git push -u origin main");
-} catch (e) {
-  console.error("Failed to create and push commit", e);
+    await execAsync("git add .", { cwd: "./" });
+    await execAsync("git commit -m 'chore: download build artifacts'", {
+      cwd: "./",
+    });
+    await execAsync("git push -u origin main");
+  } catch (e) {
+    console.error("Failed to create and push commit", e);
+  }
 }
 
 console.log("Publishing artifacts to NPM!");
@@ -58,7 +62,3 @@ for (let packageName of publishPackages) {
   fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
   await execAsync(`npm publish --access public`, { cwd: packagePath });
 }
-
-// for (let packageName of publishPackages) {
-//   let packagePath = path.join("./", commit, packageName);
-// }
