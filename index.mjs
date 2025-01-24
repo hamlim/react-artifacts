@@ -50,7 +50,7 @@ console.log("Publishing artifacts to NPM!");
 // update their `name` field to be `@matthamlin/${existingPackageName}`
 // and then run `npm publish` for each of them
 
-let publishPackages = ["react-server-dom-esm"];
+let publishPackages = ["react-server-dom-esm", "react-client", "react-server"];
 
 let scope = "@matthamlin";
 
