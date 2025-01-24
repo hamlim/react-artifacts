@@ -59,6 +59,7 @@ for (let packageName of publishPackages) {
     let packagePath = path.join("./", commit, "oss-experimental", packageName);
     let packageJsonPath = path.join(packagePath, "package.json");
     let packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf8"));
+    delete packageJson.private;
     packageJson.name = `${scope}/${packageName}`;
     fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
     await execAsync(`npm publish --access public`, { cwd: packagePath });
