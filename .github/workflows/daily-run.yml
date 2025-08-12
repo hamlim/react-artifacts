@@ -10,25 +10,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - run: echo 'Skipped - see #2'
 
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v1
-        with:
-          bun-version: latest
+    # steps:
+    #   - name: Checkout repository
+    #     uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '23.x'
-          registry-url: 'https://registry.npmjs.org'
+    #   - name: Setup Bun
+    #     uses: oven-sh/setup-bun@v1
+    #     with:
+    #       bun-version: latest
 
-      - name: Install dependencies
-        run: bun install
+    #   - name: Set up Node.js
+    #     uses: actions/setup-node@v4
+    #     with:
+    #       node-version: '23.x'
+    #       registry-url: 'https://registry.npmjs.org'
 
-      - name: Run script
-        run: bun run index.mjs
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    #   - name: Install dependencies
+    #     run: bun install
+
+    #   - name: Run script
+    #     run: bun run index.mjs
+    #     env:
+    #       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #       NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
