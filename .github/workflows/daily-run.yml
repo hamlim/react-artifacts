@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "Skipped - see #2"
+      - run: echo "Skipped - see issue number 2"
 
     # steps:
     #   - name: Checkout repository
